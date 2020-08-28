@@ -30,8 +30,8 @@ public class BaseClass {
 		TakesScreenshot screenshot=(TakesScreenshot) driver;
 		File sourcefile=screenshot.getScreenshotAs(OutputType.FILE);
 		String path=System.getProperty("user.dir")+"\\reports\\"+TestcaseName+".png";
-		File destinstion= new File(path);
-		FileHandler.copy(sourcefile, destinstion);
+		File destination= new File(path);
+		FileHandler.copy(sourcefile, destination);
 		return path;
 	}
 }

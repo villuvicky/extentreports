@@ -23,7 +23,7 @@ public class TypeInGoogle extends BaseClass{
 		WebElement enterbox=driver.findElement(By.name("q"));
 		enterbox.sendKeys("n");
 		driver.getTitle();
-		Assert.assertTrue(false);
+		Assert.assertTrue(true);
 		driver.close();
 	}
 
